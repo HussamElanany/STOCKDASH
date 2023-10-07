@@ -26,8 +26,8 @@ function addData() {
     }
     earinings.push(newProduct)
     localStorage.setItem('theEarinings', JSON.stringify(earinings))
-    showData()
     getTotal()
+    showData()
     clearInputs()
     console.log(earinings);
 }
@@ -43,8 +43,12 @@ function showData() {
         <td>${item.purchasePrice}</td>
         <td>${item.sellingPrice}</td>
         <td>${item.qty}</td>
-        <td>${item.companyName}</td>
+        <td class='caps'>${item.companyName}</td>
         <td>${item.total}</td>
+        <td><button type="button" onclick="
+        deleteItem(${i})
+        showData()
+        " class="btn btn-outline-primary">-</button></td>
         </tr> 
             `
         console.log(item);
@@ -66,10 +70,10 @@ function clearInputs() {
 
 // Get Total
 
-let nums = []
-let sum = 0;
-function getTotal() {
 
+function getTotal() {
+    let nums = []
+    let sum = 0;
     for (let i = 0; i < earinings.length; i++) {
 
         // var num = test[i] + test[i];
@@ -77,7 +81,17 @@ function getTotal() {
         sum += parseInt(nums[i]);
     }
     overAllTotal.innerHTML = sum
+
+    showData()
+
     console.log(sum);
 }
-
 getTotal()
+
+// Delete Item
+function deleteItem(i) {
+    earinings.splice(i, 1)
+    localStorage.theEarinings = JSON.stringify(earinings)
+    getTotal()
+    showData()
+}
