@@ -4,8 +4,17 @@
     text-transform: uppercase;
 }
 
+.center {
+    margin-top: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+/* Header */
 header .welcome-message {
     padding: 30px 10px;
+
 }
 
 header .welcome-message h1 {
@@ -36,6 +45,18 @@ header .welcome-message p {
     width: 15px;
 }
 
+.new-invest {
+    margin: 10px;
+}
+
+.new-invest-container {
+    text-align: center;
+}
+
+.table-history {
+    margin-top: 20px;
+}
+
 tfoot td {
     font-weight: bold;
 }
@@ -59,5 +80,13 @@ tfoot td {
         display: block;
         margin: 0 44%;
 
+    }
+
+
+    .srollable {
+        overflow-x: scroll;
+        white-space: nowrap;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
     }
 }

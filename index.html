@@ -58,30 +58,74 @@
 
         <!-- Table Container -->
         <div class="container">
+            <div class="new-invest-container">
+                <button class="new-invest btn btn-outline-secondary" onclick="pushData()"> استثمارات جديدة </button>
+            </div>
 
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">سعر الدخول</th>
-                        <th scope="col">سعر الخروج</th>
-                        <th scope="col"> عدد الاسهم</th>
-                        <th scope="col">كود الشركة</th>
-                        <th colspan="2" scope="col">صافي ربح</th>
-                    </tr>
-                </thead>
-                <tbody class="tbody">
+            <div class="container srollable">
 
-                </tbody>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">سعر الدخول</th>
+                            <th scope="col">سعر الخروج</th>
+                            <th scope="col"> عدد الاسهم</th>
+                            <th scope="col">كود الشركة</th>
 
-                <tfoot>
-                    <tr>
-                        <td colspan="4">Over All Total</td>
-                        <td></td>
-                        <td class="overall-total" colspan="">$</td>
-                    </tr>
-                </tfoot>
-            </table>
+                            <th colspan="" scope="col">صافي ربح</th>
+
+                            <th colspan="" scope="col"> تاريخ الاستثمار </th>
+
+                        </tr>
+                    </thead>
+                    <tbody class="tbody">
+
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Over All Total</td>
+                            <td></td>
+                            <td class="overall-total" colspan="">$</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+
+            <!-- Tabel History -->
+            <div class="container srollable">
+                <p class="center"> الاستثمارات السابقة </p>
+                <table class="table table-history">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">سعر الدخول</th>
+                            <th scope="col">سعر الخروج</th>
+                            <th scope="col"> عدد الاسهم</th>
+                            <th scope="col">كود الشركة</th>
+                            <th colspan="" scope="col">صافي ربح</th>
+                            <th colspan="" scope="col"> تاريخ الاستثمار </th>
+                        </tr>
+                    </thead>
+                    <tbody class="tbodyHistory">
+
+                    </tbody>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="4">Over All Total</td>
+                            <td></td>
+                            <td class="overall-total-hist" colspan="">$</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+
+
+
         </div>
     </div>
 
