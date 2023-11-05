@@ -30,7 +30,7 @@
                             <a class="nav-link" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Over All</a>
+                            <a class="nav-link" href="#overall">Over All</a>
                         </li>
                     </ul>
                 </div>
@@ -58,12 +58,8 @@
 
         <!-- Table Container -->
         <div class="container">
-            <div class="new-invest-container">
-                <button class="new-invest btn btn-outline-secondary" onclick="pushData()"> استثمارات جديدة </button>
-            </div>
-
+            <p class="center"> الاستثمارات الحالية </p>
             <div class="container srollable">
-
                 <table class="table">
                     <thead>
                         <tr>
@@ -85,7 +81,7 @@
 
                     <tfoot>
                         <tr>
-                            <td colspan="4">Over All Total</td>
+                            <td id="overall" colspan="4">Over All Total</td>
                             <td></td>
                             <td class="overall-total" colspan="">$</td>
                         </tr>
@@ -95,6 +91,9 @@
 
 
             <!-- Tabel History -->
+            <div class="new-invest-container">
+                <button class="new-invest btn btn-outline-secondary" onclick="pushData()"> استثمارات جديدة </button>
+            </div>
             <div class="container srollable">
                 <p class="center"> الاستثمارات السابقة </p>
                 <table class="table table-history">
@@ -122,17 +121,96 @@
                     </tfoot>
                 </table>
             </div>
-
-
-
-
         </div>
-    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+        <!-- devide investments -->
+        <!-- <h3 class="center"> تقسيم المحفظة </h3>
+
+        <div class="">
+            <div class=" wraping">
+                <div>
+
+                    <div class="amount">
+                        <p class="center"> :اجمالي السيولة </p>
+                        <input type="number" class="full-amount">
+                        <p> Amount: &<span> %</span> </p>
+                    </div>
+                </div>
+                <div>
+
+                    <div class="amount">
+                        <p class="center"> :بعيد المدى </p>
+                        <input type="number" class="long-invest">
+                        <p> Amount: &<span> %</span> </p>
+                    </div>
+                </div>
+                <div>
+
+                    <div class="amount">
+                        <p class="center"> :قريب المدى </p>
+                        <input type="number" class="fast-invest">
+                        <p> Amount: &<span> %</span> </p>
+                    </div>
+                </div>
+                <div>
+
+                    <div class="amount">
+                        <p class="center">
+                            :المحافظ الاسثمارية </p>
+                        <input type="number" class="investment-port">
+                        <p> Amount: &<span> %</span> </p>
+                    </div>
+
+
+                </div>
+            </div>
+        </div> -->
+
+
+        <!-- Interesting Companies  -->
+
+
+
+        <!-- Set a goal section -->
+        <!--
+        <h3 class="center"> !ضع هدفا </h3>
+
+        <div class="inputs-container">
+            <input type="text" class="purchase-price-goal" onkeyup="" placeholder="سعر الدخول">
+            <input type="text" class="seling-price-goal" onkeyup="" placeholder="سعر الخروج">
+            <input type="text" class="qty-goal" onkeyup="" placeholder="عدد الأسهم">
+            <input type="text" class="company-name-goal" onkeyup="" placeholder="كود الشركة">
+            <button type="button" onclick="addDataGoal()" class="btn btn-primary">+</button>
+        </div>
+
+        <table class="table srollable">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">سعر الدخول</th>
+                    <th scope="col"> عدد الاسهم</th>
+                    <th scope="col"> سعر الخروج المتوقع</th>
+                    <th scope="col">كود الشركة</th>
+                    <th colspan="" scope="col"> الربح المتوقع</th>
+                    <th colspan="" scope="col"> تاريخ الاستثمار </th>
+                </tr>
+            </thead>
+            <tbody class="tbody-goals">
+            </tbody>
+        </table>
+    </div> -->
+
+        <!-- <h1>
+        To calculate a percentage, you typically divide the part (the smaller value) by the whole (the larger value),
+        and then multiply the result by 100. This gives you the percentage value as a number between 0 and 100. For
+        example, if you have 50 apples and you want to know what percentage of them are red, and 20 of them are red, you
+        would divide 20 by 50 to get 0.4, then multiply by 100 to get 40%.
+    </h1> -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>

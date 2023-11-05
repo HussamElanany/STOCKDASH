@@ -1,7 +1,19 @@
 const purchasePrice = document.querySelector('.purchase-price')
+
+const purchasePriceGoal = document.querySelector('.purchase-price-goal')
+
 const sellingPrice = document.querySelector('.seling-price')
+
+const sellingPriceGoal = document.querySelector('.seling-price-goal')
+
 const qty = document.querySelector('.qty')
+
+const qtyGoal = document.querySelector('.qty-goal')
+
 const companyName = document.querySelector('.company-name')
+
+const companyNameGoal = document.querySelector('.company-name-goal')
+
 const overAllTotal = document.querySelector('.overall-total')
 
 const overAllTotalHist = document.querySelector('.overall-total-hist')
@@ -52,7 +64,12 @@ function showData() {
         <td><button type="button" onclick="
         deleteItem(${i})
         showData()
-        " class="btn btn-outline-primary">-</button></td>
+        " class="btn btn-outline-primary">-</button>
+
+        <button type="button" onclick="
+        updateData(${i})
+        showData()
+        " class="btn btn-outline-success">Edit</button></td>
         </tr> 
             `
 
@@ -95,6 +112,15 @@ function deleteItem(i) {
     showData()
 }
 
+
+// Update Invest
+function updateData(i) {
+    console.log(i);
+    purchasePrice.value = earinings[i].purchasePrice
+    sellingPrice.value = earinings[i].sellingPrice
+    qty.value = earinings[i].qty
+    companyName.value = earinings[i].companyName
+}
 
 let eariningsHistory;
 if (localStorage.theEariningsHistory != null) {
@@ -181,3 +207,67 @@ function getTotalHist() {
 
 }
 getTotalHist()
+
+// Add goal 
+
+let goals;
+if (localStorage.theGoal != null) {
+    goals = JSON.parse(localStorage.theGoal)
+} else {
+    goals = []
+}
+
+function addDataGoal() {
+    let dateFunc = new Date()
+    let date = dateFunc.toString()
+    console.log(date);
+    let newProduct = {
+        purchasePrice: purchasePriceGoal.value,
+        sellingPrice: sellingPriceGoal.value,
+        qty: qtyGoal.value,
+        companyName: companyNameGoal.value,
+        total: Math.round((+qtyGoal.value * +sellingPriceGoal.value) - (+purchasePriceGoal.value * +qtyGoal.value)),
+        getDate: date.slice(0, 25)
+    }
+    goals.push(newProduct)
+    localStorage.setItem('theGoal', JSON.stringify(goals))
+
+    showData()
+    clearInputs()
+    console.log(goals);
+}
+function showDataGoal() {
+    if (goals != []) {
+        let table = '';
+        for (let i = 0; i < goals.length; i++) {
+
+            table += `
+        <tr>
+        <th scope="row">${i + 1}</th>
+        <td>${goals[i].purchasePrice}</td>
+        <td>${goals[i].sellingPrice}</td>
+        <td>${goals[i].qty}</td>
+        <td class='caps'>${goals[i].companyName}</td>
+        <td>${goals[i].total}</td>
+        <td>${goals[i].getDate}</td>
+       
+        </tr>
+             `
+            // <td><button type="button" onclick="
+            // deleteItem(${i})
+            // showData()
+            // " class="btn btn-outline-primary">-</button></td>
+            console.log(goals[i].purchasePrice);
+        }
+
+        let tbodyGoals = document.querySelector('.tbody-goals')
+        tbodyGoals.innerHTML = table
+    }
+
+}
+showDataGoal()
+
+const fullAmount = document.querySelector('.full-amount')
+const longInvest = document.querySelector('.long-invest')
+const fastInvest = document.querySelector('.fast-invest')
+const invesPort = document.querySelector('.investment-port')

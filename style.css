@@ -11,6 +11,15 @@
     font-size: 25px;
 }
 
+.wraping {
+    width: 98%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    margin-top: 50px;
+}
+
 /* Header */
 header .welcome-message {
     padding: 30px 10px;
@@ -61,6 +70,13 @@ tfoot td {
     font-weight: bold;
 }
 
+.amount {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+}
+
 @media only screen and (max-width: 600px) {
     .inputs-container {
         padding: 0;
@@ -80,6 +96,19 @@ tfoot td {
         display: block;
         margin: 0 44%;
 
+    }
+
+    .wraping {
+        margin: 0;
+        display: block;
+        text-align: center;
+        padding: 20px;
+        margin-top: 50px;
+    }
+
+    .amount {
+        margin: 20px 0;
+        width: 100%;
     }
 
 
