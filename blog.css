@@ -26,12 +26,12 @@ h2 {
     width: 88%;
     padding-left: 7px;
     font-weight: bold;
-
+    font-size: 20px;
 }
 
 .content-container .header .img-ctr {
     display: inline-block;
-    width: 5%;
+    width: 9%;
 }
 
 .content-container .header .img-ctr img {

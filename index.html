@@ -92,7 +92,46 @@
                 </table>
             </div>
 
+            <!-- Companies to follow -->
+            <div class="companies-section ">
+                <!--
+    
+    . {
+        overflow-x: scroll;
+        white-space: nowrap;
+        overflow-y: hidden;
+        -webkit-overflow-scrolling: touch;
+    }
+}
+-->
 
+                <p class="center"> شركات للمتابعة </p>
+                <div class=" inputs">
+                    <input class="comp-name" type="text" placeholder=" اسم الشركة ">
+                    <input class="current-price" type="text" placeholder=" السعر الحالي للسهم ">
+                    <input class="flo-reason" type="text" placeholder=" سبب المتابعة ">
+
+                    <button onclick="addCompLst()" class="btn btn-primary"> + </button>
+                </div>
+
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col"> كود الشركة </th>
+                            <th scope="col"> سعر السهم الحالي </th>
+                            <th scope="col" colspan=""> سبب المتابعة </th>
+                            <th colspan="" scope="col"> التاريخ </th>
+
+                        </tr>
+                    </thead>
+                    <tbody class="tbody-comp">
+
+                    </tbody>
+
+
+                </table>
+            </div>
             <!-- Tabel History -->
             <div class="new-invest-container">
                 <button class="new-invest btn btn-outline-secondary" onclick="pushData()"> استثمارات جديدة </button>
