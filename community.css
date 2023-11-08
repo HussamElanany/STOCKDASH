@@ -1,0 +1,167 @@
+body {
+    padding-bottom: 100px;
+}
+
+.new-idea {
+    padding-top: 10px;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.new-idea-btn {}
+
+.inputs {
+    display: none;
+    padding: 15px 0;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.inputs textarea {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.inputs button {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.content-container {
+    height: 100vh;
+    position: relative;
+}
+
+.content {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.content .post {
+    padding: 10px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+
+.content .post .header div {
+    display: inline-block;
+}
+
+.content .post .header .img-container {
+    width: 10%;
+}
+
+.content .post .header .img-container img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.content .post .header .profile-container {
+
+    width: 70%;
+}
+
+.content .post .header .profile-name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.content .post .header .date-hour {
+    font-size: 14;
+    background-color: white;
+    display: inline-block;
+    padding-left: 0;
+    margin: 10px 0 5px 0;
+
+}
+
+.content .post .header div p {
+
+    padding: 0;
+    margin: 0;
+}
+
+.content .post .post-body {
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.content .post .reactions {
+    width: 30%;
+    margin: 20px auto 10px auto;
+}
+
+.content .post .reactions button {
+    margin-left: 20px;
+}
+
+.post-btn-container {
+    text-align: right;
+    margin: 20px 0;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    .content {
+        width: 90%;
+        padding: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .content .post .reactions {
+        width: 50%;
+    }
+
+    .new-idea {
+        width: 100%;
+    }
+
+    .inputs {
+        width: 100%;
+
+    }
+
+    .inputs textarea {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .content .post .reactions {
+        width: 70%;
+    }
+
+    .new-idea {
+        width: 100%;
+    }
+
+    .inputs {
+        width: 100%;
+
+    }
+
+    .inputs textarea {
+        width: 100%;
+    }
+}

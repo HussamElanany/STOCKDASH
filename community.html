@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="community.css">
+    <title>Community</title>
+</head>
+
+<body class="bg-body-tertiary">
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg bg-body-secondary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">STOCKDASH</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="community.html">Community</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Add the content -->
+
+    <div class="container">
+        <div class="new-idea">
+            <button onclick="displayPostOption()" class="btn btn-primary btn-lg">Do you have new Idea?</button>
+        </div>
+
+        <div class="inputs">
+            <textarea class="user-content" name="" id=""></textarea>
+            <button class="btn btn-primary" onclick="addContent()">post</button>
+        </div>
+    </div>
+    <!--Dispaly Community Content -->
+    <div class="container content-container">
+        <div class="content">
+            <div class="post bg-body-secondary">
+                <div class="header">
+                    <div class="img-container">
+                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                            alt="">
+                    </div>
+                    <div class="profile-container">
+                        <p class="profile-name"> Hussam Elanany</p>
+
+                    </div>
+                    <p class="date-hour">Jan 16 18:43:50</p>
+
+                </div>
+                <div class="post-body bg-light"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
+                    exercitationem?
+                    Expedita nobis eaque animi culpa inventore odio non nemo nostrum aut quasi, laborum vel cum? In
+                    cumque
+                    praesentium maiores ipsum!
+                    Harum ullam perspiciatis voluptate sequi, maiores accusamus laudantium dolor aliquam dolore
+                    reprehenderit? Obcaecati voluptates cumque iure quam accusantium placeat? Autem blanditiis quae
+                    minima
+                    voluptatibus dicta eveniet nam rerum nostrum saepe!</div>
+                <div class="reactions">
+                    <button class="btn btn-success">Agree</button><button class="btn btn-danger">Disagree</button>
+                </div>
+
+            </div>
+
+
+            <div class="post bg-body-secondary">
+                <div class="header">
+                    <div class="img-container">
+                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                            alt="">
+                    </div>
+                    <div class="profile-container">
+                        <p class="profile-name"> Hussam Elanany</p>
+
+                    </div>
+                    <p class="date-hour">Jan 16 18:43:50</p>
+
+                </div>
+                <div class="post-body bg-light"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
+                    exercitationem?
+                    Expedita nobis eaque animi culpa inventore odio non nemo nostrum aut quasi, laborum vel cum? In
+                    cumque
+                    praesentium maiores ipsum!
+                    Harum ullam perspiciatis voluptate sequi, maiores accusamus laudantium dolor aliquam dolore
+                    reprehenderit? Obcaecati voluptates cumque iure quam accusantium placeat? Autem blanditiis quae
+                    minima
+                    voluptatibus dicta eveniet nam rerum nostrum saepe!</div>
+                <div class="reactions">
+                    <button class="btn btn-success">Agree</button><button class="btn btn-danger">Disagree</button>
+                </div>
+
+            </div>
+
+            <div class="post bg-body-secondary">
+                <div class="header">
+                    <div class="img-container">
+                        <img src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
+                            alt="">
+                    </div>
+                    <div class="profile-container">
+                        <p class="profile-name"> Hussam Elanany</p>
+
+                    </div>
+                    <p class="date-hour">Jan 16 18:43:50</p>
+
+                </div>
+                <div class="post-body bg-light"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit,
+                    exercitationem?
+                    Expedita nobis eaque animi culpa inventore odio non nemo nostrum aut quasi, laborum vel cum? In
+                    cumque
+                    praesentium maiores ipsum!
+                    Harum ullam perspiciatis voluptate sequi, maiores accusamus laudantium dolor aliquam dolore
+                    reprehenderit? Obcaecati voluptates cumque iure quam accusantium placeat? Autem blanditiis quae
+                    minima
+                    voluptatibus dicta eveniet nam rerum nostrum saepe!</div>
+                <div class="reactions">
+                    <button class="btn btn-success">Agree</button><button class="btn btn-danger">Disagree</button>
+                </div>
+
+            </div>
+
+
+
+
+            <div class="post-btn-container">
+                <button class="post-btn btn btn-primary"> Idea?</button>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="community.js"></script>
+</body>
+
+</html>
