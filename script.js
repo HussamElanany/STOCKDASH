@@ -256,7 +256,7 @@ function showInterstingComp() {
         <td class='caps'>${companies[i].compName}</td>
         <td>${companies[i].currentPrice}</td>
         <td >${companies[i].followRes}</td>
-        <td>${eariningsHistory[i].getDate}</td>
+        <td>${companies[i].getDate}</td>
         <td><button type="button" onclick="
         deleteComp(${i})
         showData()
